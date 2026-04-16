@@ -32,7 +32,7 @@ if "messages" not in st.session_state:
     st.session_state.messages = []
 
 if "db_retriever" not in st.session_state:
-    with st.spinner("📦 羅傑正在原神啟動..."):
+    with st.spinner("📦 羅傑正在啟動..."):
         st.session_state.db_retriever = initialize_vector_db()
 
 # --- 3. 側邊欄 UI ---
